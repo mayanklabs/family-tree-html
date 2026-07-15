@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Family Tree Editor | Free Interactive Family Chart Creator</title>
+
+    <meta name="title" content="Family Tree Editor | Free Interactive Family Chart Creator" />
+    <meta name="description" content="Create, edit, visualize, and manage your family tree directly in your browser. Import and export JSON, edit relationships, and save locally without a database." />
+    <meta name="keywords" content="family tree, family chart, genealogy, family editor, pedigree chart, ancestry tree, family visualization, JSON family tree, family graph" />
+    <meta name="author" content="Mayank Vishwakarma" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="application-name" content="Family Tree Editor" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mayanklabs.github.io/family-tree-html/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Family Tree Editor | Interactive Family Chart Creator" />
+    <meta property="og:description" content="A free browser-based Family Tree Editor supporting local JSON files, relationship management, import/export, and interactive visualization." />
+    <meta property="og:url" content="https://mayanklabs.github.io/family-tree-html/" />
+    <meta property="og:site_name" content="Family Tree Editor" />
+    <meta property="og:image" content="https://mayanklabs.github.io/family-tree-html/preview.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Family Tree Editor" />
+    <meta name="twitter:description" content="Create and edit interactive family trees directly in your browser with local JSON storage." />
+    <meta name="twitter:image" content="https://mayanklabs.github.io/family-tree-html/preview.png" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Family Tree Editor" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/family-chart@0.9.0/dist/styles/family-chart.css" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/d3@7"></script>
+    <script type="module" src="https://unpkg.com/family-chart@0.9.0"></script>
+</head>
+
+<body>
+    <div class="toolbar">
+        <button id="newBtn">🆕 New</button>
+        <button id="loadBtn">📂 Open JSON</button>
+        <button id="saveBtn">💾 Save</button>
+        <button id="saveAsBtn">📁 Save As</button>
+        <button id="exportBtn">⬇ Export JSON</button>
+        <span class="status" id="status">Ready</span>
+    </div>
+
+    <div id="FamilyChart" class="f3"></div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
